@@ -31,7 +31,24 @@
                                     Daftarkan diri anda sekarang
                                 </h6>
                             </div>
+
+
                             <?= $this->session->flashdata('message');  ?>
+
+                            <table class="table table-responsive" width="100%">
+                                <thead>
+                                    <th>Username</th>
+                                    <th>Password</th>
+                                </thead>
+                                <tbody>
+                                    <?php foreach ($data_user as $data){?>
+                                    <tr>
+                                        <td><?=$data->name;?></td>
+                                        <td><?=$data->email;?></td>
+                                    </tr>
+                                    <?php } ?>
+                                </tbody>
+                            </table>
                             <form class="user">
                                 <div class="form-group">
                                     <input type="email" class="form-control form-control-user" id="email" placeholder="Email">
