@@ -2348,34 +2348,31 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #4e73df;
-  border-color: #4e73df;
 }
 
 .btn-primary:hover {
   color: #fff;
   background-color: #2e59d9;
-  border-color: #2653d4;
+
 }
 
 .btn-primary:focus, .btn-primary.focus {
   color: #fff;
   background-color: #2e59d9;
-  border-color: #2653d4;
+
   box-shadow: 0 0 0 0.2rem rgba(105, 136, 228, 0.5);
 }
 
 .btn-primary.disabled, .btn-primary:disabled {
   color: #fff;
   background-color: #4e73df;
-  border-color: #4e73df;
 }
 
 .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
 .show > .btn-primary.dropdown-toggle {
   color: #fff;
   background-color: #2653d4;
-  border-color: #244ec9;
+
 }
 
 .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
@@ -10824,19 +10821,19 @@ a:focus {
 }
 
 .bg-login-image {
-  background: url("https://source.unsplash.com/K4mSJ7kc0As/600x800");
+  background: url ("https://source.unsplash.com/QckxruozjRg/600x800");
   background-position: center;
   background-size: cover;
 }
 
 .bg-register-image {
-  background: url("https://source.unsplash.com/Mv9hjnEUHR4/600x800");
+  background: url("https://source.unsplash.com/QckxruozjRg/600x800");
   background-position: center;
   background-size: cover;
 }
 
 .bg-password-image {
-  background: url("https://source.unsplash.com/oWTW-jNGl9I/600x800");
+  background: url("https://source.unsplash.com/QckxruozjRg/600x800");
   background-position: center;
   background-size: cover;
 }
