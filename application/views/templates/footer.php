@@ -36,8 +36,17 @@
             </div>
         </div>
     </div>
+</div>
 
     <!-- Bootstrap core JavaScript-->
+<<<<<<< HEAD
+=======
+
+    <!-- perhatikan url pada assets sesuai apa belum
+        dalam kasus kamu kamu kurang menambahkan "/" pada assets
+        sehingga assets tidak terbaca / tidak ditemukan
+     -->
+>>>>>>> a3f08f5f5db96b55245745d0c9b7d343068c4b2e
     <script src="<?= base_url('assets/'); ?>vendor/jquery/jquery.min.js"></script>
     <script src="<?= base_url('assets/'); ?>vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
@@ -46,6 +55,11 @@
 
     <!-- Custom scripts for all pages-->
     <script src="<?= base_url('assets/'); ?>js/sb-admin-2.min.js"></script>
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> a3f08f5f5db96b55245745d0c9b7d343068c4b2e
 
     </body>
 
