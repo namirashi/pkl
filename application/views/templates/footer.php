@@ -51,6 +51,31 @@
     <script src="<?= base_url('assets/'); ?>js/sb-admin-2.min.js"></script>
     <<<<<<< HEAD=======>>>>>>> a3f08f5f5db96b55245745d0c9b7d343068c4b2e
 
+        <script>
+            $('.custom-file-input').on('change', function() {
+                let fileName = $(this).val().split('\\').pop();
+                $(this).next('.custom-file-label').addClass("selected").html(fileName);
+            });
+
+            $('.form-check-input').on('click', function() {
+                const menuId = $(this).data('menu');
+                const roleId = $(this).data('role');
+
+                $.ajax({
+                    url: "<?= base_url('admin/changeaccess'); ?>",
+                    type: 'post',
+                    data: {
+                        menuId: menuId,
+                        roleId: roleId
+                    },
+                    success: function() {
+                        document.location.href = "<?= base_url('admin/roleaccess/'); ?>" + roleId;
+                    }
+                });
+
+            });
+        </script>
+
         </body>
 
         </html>
