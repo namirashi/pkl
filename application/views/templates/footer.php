@@ -39,43 +39,43 @@
 </div>
 
 <!-- Bootstrap core JavaScript-->
-<<<<<<< HEAD=======<!-- perhatikan url pada assets sesuai apa belum dalam kasus kamu kamu kurang menambahkan "/" pada assets sehingga assets tidak terbaca / tidak ditemukan -->
-    >>>>>>> a3f08f5f5db96b55245745d0c9b7d343068c4b2e
-    <script src="<?= base_url('assets/'); ?>vendor/jquery/jquery.min.js"></script>
-    <script src="<?= base_url('assets/'); ?>vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- perhatikan url pada assets sesuai apa belum dalam kasus kamu kamu kurang menambahkan "/" pada assets sehingga assets tidak terbaca / tidak ditemukan -->
 
-    <!-- Core plugin JavaScript-->
-    <script src="<?= base_url('assets/'); ?>vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="<?= base_url('assets/'); ?>vendor/jquery/jquery.min.js"></script>
+<script src="<?= base_url('assets/'); ?>vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Custom scripts for all pages-->
-    <script src="<?= base_url('assets/'); ?>js/sb-admin-2.min.js"></script>
-    <<<<<<< HEAD=======>>>>>>> a3f08f5f5db96b55245745d0c9b7d343068c4b2e
+<!-- Core plugin JavaScript-->
+<script src="<?= base_url('assets/'); ?>vendor/jquery-easing/jquery.easing.min.js"></script>
 
-        <script>
-            $('.custom-file-input').on('change', function() {
-                let fileName = $(this).val().split('\\').pop();
-                $(this).next('.custom-file-label').addClass("selected").html(fileName);
-            });
+<!-- Custom scripts for all pages-->
+<script src="<?= base_url('assets/'); ?>js/sb-admin-2.min.js"></script>
 
-            $('.form-check-input').on('click', function() {
-                const menuId = $(this).data('menu');
-                const roleId = $(this).data('role');
 
-                $.ajax({
-                    url: "<?= base_url('admin/changeaccess'); ?>",
-                    type: 'post',
-                    data: {
-                        menuId: menuId,
-                        roleId: roleId
-                    },
-                    success: function() {
-                        document.location.href = "<?= base_url('admin/roleaccess/'); ?>" + roleId;
-                    }
-                });
+<script>
+    $('.custom-file-input').on('change', function() {
+        let fileName = $(this).val().split('\\').pop();
+        $(this).next('.custom-file-label').addClass("selected").html(fileName);
+    });
 
-            });
-        </script>
+    $('.form-check-input').on('click', function() {
+        const menuId = $(this).data('menu');
+        const roleId = $(this).data('role');
 
-        </body>
+        $.ajax({
+            url: "<?= base_url('admin/changeaccess'); ?>",
+            type: 'post',
+            data: {
+                menuId: menuId,
+                roleId: roleId
+            },
+            success: function() {
+                document.location.href = "<?= base_url('admin/roleaccess/'); ?>" + roleId;
+            }
+        });
 
-        </html>
+    });
+</script>
+
+</body>
+
+</html>
