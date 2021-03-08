@@ -22,6 +22,28 @@
                 </div>
             </div>
             <div class="form-group row">
+                <label for="name" class="col-sm-2 col-form-label">Adreess</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="address" name="address" value="<?= $user['address']; ?>">
+                    <?= form_error('address', '<small class="text-danger pl-3">', '</small>'); ?>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="name" class="col-sm-2 col-form-label">Place of Birth</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="placeofbirth" name="placeofbirth" value="<?= $user['placeofbirth']; ?>">
+                    <?= form_error('placeofbirth', '<small class="text-danger pl-3">', '</small>'); ?>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="name" class="col-sm-2 col-form-label">Date of Birth</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="dateofbirth" name="dateofbirth" value="<?= $user['dateofbirth']; ?>">
+                    <?= form_error('dateofbirth', '<small class="text-danger pl-3">', '</small>'); ?>
+                </div>
+            </div>
+
+            <div class="form-group row">
                 <div class="col-sm-2">Picture</div>
                 <div class="col-sm-10">
                     <div class="row">

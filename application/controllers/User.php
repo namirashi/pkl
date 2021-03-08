@@ -27,6 +27,9 @@ class User extends CI_Controller
 
 
         $this->form_validation->set_rules('name', 'Full Name', 'required|trim');
+        $this->form_validation->set_rules('address', 'Address', 'required|trim');
+        $this->form_validation->set_rules('placeofbirth', 'Place of Birth', 'required|trim');
+        $this->form_validation->set_rules('dateofbirth', 'Date of Birth', 'required|trim');
 
         if ($this->form_validation->run() == false) {
             $this->load->view('templates/header', $data);
@@ -37,9 +40,12 @@ class User extends CI_Controller
         } else {
             $name = $this->input->post('name');
             $email = $this->input->post('email');
+            $address = $this->input->post('address');
+            $placeofbirth = $this->input->post('placeofbirth');
+            $dateofbirth = $this->input->post('dateofbirth');
 
             // cek jika ada gambar yang akan diupload
-            $upload_image = $_FILES['image']['name'];
+            $upload_image = $_FILES['image']['name']['address'];
 
             if ($upload_image) {
                 $config['allowed_types'] = 'gif|jpg|png';
@@ -61,6 +67,10 @@ class User extends CI_Controller
             }
 
             $this->db->set('name', $name);
+            $this->db->set('address', $address);
+            $this->db->set('placeofbirth', $placeofbirth);
+            $this->db->set('dateofbirth', $dateofbirth);
+
             $this->db->where('email', $email);
             $this->db->update('user');
 

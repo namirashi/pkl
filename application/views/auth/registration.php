@@ -34,6 +34,20 @@
 
                                 </div>
                             </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control form-control-user" id="address" name="address" placeholder="Address" value="<?= set_value('address'); ?>">
+                                <?= form_error('address', '<small class="text-danger pl-3">', '</small>'); ?>
+                            </div>
+                            <div class=" form-group row">
+                                <div class="col-sm-6 mb-3 mb-sm-0">
+                                    <input type="text" class="form-control form-control-user" id="dateofbirth" name="dateofbirth" placeholder="Date Of Birth" value="<?= set_value('dateofbirth'); ?>">
+                                    <?= form_error('dateofbirth', '<small class="text-danger pl-3">', '</small>'); ?>
+                                </div>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control form-control-user" id="placeofbirth" name="placeofbirth" placeholder="Place Of Birth" value="<?= set_value('placeofbirth'); ?>">
+                                    <?= form_error('placeofbirth', '<small class="text-danger pl-3">', '</small>'); ?>
+                                </div>
+                            </div>
                             <button type="submit" class="btn btn-primary btn-user btn-block">
                                 Register Account
                             </button>
