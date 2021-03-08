@@ -45,7 +45,7 @@ class User extends CI_Controller
             $dateofbirth = $this->input->post('dateofbirth');
 
             // cek jika ada gambar yang akan diupload
-            $upload_image = $_FILES['image']['name']['address'];
+            $upload_image = $_FILES['image']['name']['address']['placeofbirth']['dateofbirth'];
 
             if ($upload_image) {
                 $config['allowed_types'] = 'gif|jpg|png';
